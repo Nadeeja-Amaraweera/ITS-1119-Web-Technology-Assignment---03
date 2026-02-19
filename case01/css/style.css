@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.box{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    overflow: hidden;
+}
+.red{
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+.green{
+    top: 0;
+    right: 0;
+    background-color: green;
+}
+.yellow{
+    bottom: 0;
+    left: 0;
+    background-color: rgb(238, 187, 0);
+}
+.pink{
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 0, 179);
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.white-box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.white-box::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.circle{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 20;
+}
+
+.one{
+    
+    top: -125px;
+    left: -125px;
+    
+}
+
+.two{
+    top: -125px;
+    right: -125px;
+}
+
+.three{
+    top: -125px;
+    left: -125px;
+}
+
+.four{
+    top: -125px;
+    right: -125px;
+}
+
+.five{
+    bottom: -125px;
+    left: -125px;
+}
+
+.six{
+    bottom: -125px;
+    right: -125px;
+}
+
+.seven{
+    bottom: -125px;
+    left: -125px;
+}
+
+.eight{
+    bottom: -125px;
+    right: -125px;
+}
+
